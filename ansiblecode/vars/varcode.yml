@@ -1,0 +1,17 @@
+---
+ - hosts: localhost
+   users:
+    - name: john smith
+      login: john
+    - name: jane smith
+      login: jane
+   passwords:
+    jsmith: pwd123
+    jane: pwd1234
+    
+   tasks:
+    - set_fact: user_name="{{item.login}}"
+      with_items: "{{users}}"
+      register: userinfo
+
+    - debug: msg="{{userinfo.results}}"

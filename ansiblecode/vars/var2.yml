@@ -1,0 +1,7 @@
+---
+ - hosts: grp1
+   vars:
+     users:
+      -john
+      -sam
+      -bob

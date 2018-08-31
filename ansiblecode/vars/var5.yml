@@ -1,0 +1,10 @@
+---
+ - hosts: localhost
+   vars_prompt:
+    - name: "user_name"
+      prompt: "enter the user name"
+      private: no
+
+   tasks: 
+    - name: printing user name
+      debug: msg={{user_name}}

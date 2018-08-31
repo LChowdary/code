@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   vars_files:
+    - userinfo.yml
+   tasks:
+    - name: print user names
+      debug: msg={{username}}
+
