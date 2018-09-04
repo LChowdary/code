@@ -1,0 +1,6 @@
+---
+# vars file for tomcatinstall
+
+   https_port: 8090
+   admin_username: admin
+   admin_password: admin

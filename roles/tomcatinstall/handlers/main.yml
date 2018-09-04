@@ -1,0 +1,6 @@
+---
+# handlers file for tomcatinstall
+
+  - name: restart tomcat
+    service: name=tomcat state=restarted
+
